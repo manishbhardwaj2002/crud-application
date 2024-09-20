@@ -16,10 +16,12 @@ e.preventDefault();
 axios.post(
     'https://66df2b53de4426916ee3c2a7.mockapi.io/crud-id',
     {name:name,email:email},
-    header,
+    header,)
+    .then(()=>{
+        navigate("/read")
 
-)
-navigate("/read")
+    })
+
 }
 
     return (
